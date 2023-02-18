@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(homeimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-link ul li button{
+    font-size: 13px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.nav-link ul li button:hover{
+    color: aqua;
+}
+
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.get-started{
+    width: 10%;
+    position: absolute;
+    top: 100%;
+    left: 42%;
+    /*transform: translate(-50%,-50%);*/
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 100%;
+    background: #f3c693;
+    color: black;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.get-started:hover{
+    text-decoration: none;
+    color: black;
+}
+#login-form{
+    display: none;
+}
+.form-box{
+    width: 350px;
+    height: 420px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0,0,0,0.3);
+    padding: 9px;
+    overflow: hidden;
+    /*creating the form with width height and etc*/
+}
+.button-box{
+    width: 210px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #4c24ff1f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #f3c693;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-group-register{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(241, 238, 238);
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f3c693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+span{
+    color: rgb(245, 239, 239);
+    font-size: 12px;
+    bottom: 0px;
+    position: relative;
+}
+
+#login{
+    left: 50px;
+}
+#login input{
+    color: white;
+    font-size: 15;
+}
+#register{
+    left: 480px;
+}
+#register input{
+    color: white;
+    font-size: 15;
+}
+/* footer css starts here */
+.foot{
+    margin-top: 20px;
+    padding: 25px 0;
+    background-color: #13161F;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bottom{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    text-align: right;
+    color: #fff;
+}
+
+.title{
+    font-size: 100%;
+    color: #FFFFFF;
+    text-align: left;
+    float: left;
+}
+
+.donate-btn {
+    margin-top: -5px;
+    width: 90px;
+    height: 35px;
+    margin-left: 10px;
+    padding: 7px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    background: #F7931A;
+    color:  black !important;
+    text-decoration: none !important;
+}
+/* footer css ends here  */
